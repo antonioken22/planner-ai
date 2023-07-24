@@ -28,7 +28,7 @@ const VideoPage = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       prompt: "",
-    }
+    },
   });
 
   const isLoading = form.formState.isSubmitting;
@@ -37,7 +37,7 @@ const VideoPage = () => {
     try {
       setVideo(undefined);
 
-      const response = await axios.post('/api/video', values);
+      const response = await axios.post("/api/video", values);
 
       setVideo(response.data[0]);
       form.reset();
@@ -50,21 +50,21 @@ const VideoPage = () => {
     } finally {
       router.refresh();
     }
-  }
+  };
 
-  return ( 
+  return (
     <div>
       <Heading
         title="Video Generation"
-        description="Turn your prompt into video."
+        description="Powered by Replicate."
         icon={FileAudio}
-        iconColor="text-orange-700"
-        bgColor="bg-orange-700/10"
+        iconColor="text-maroon-800"
+        bgColor="bg-maroon-800/10"
       />
       <div className="px-4 lg:px-8">
         <Form {...form}>
-          <form 
-            onSubmit={form.handleSubmit(onSubmit)} 
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
             className="
               rounded-lg 
               border 
@@ -85,15 +85,20 @@ const VideoPage = () => {
                   <FormControl className="m-0 p-0">
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
-                      disabled={isLoading} 
-                      placeholder="Clown fish swimming in a coral reef" 
+                      disabled={isLoading}
+                      placeholder="A walking giant inside Cebu Institute of Technology - University"
                       {...field}
                     />
                   </FormControl>
                 </FormItem>
               )}
             />
-            <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
+            <Button
+              className="col-span-12 lg:col-span-2 w-full"
+              type="submit"
+              disabled={isLoading}
+              size="icon"
+            >
               Generate
             </Button>
           </form>
@@ -103,17 +108,18 @@ const VideoPage = () => {
             <Loader />
           </div>
         )}
-        {!video && !isLoading && (
-          <Empty label="No video files generated." />
-        )}
+        {!video && !isLoading && <Empty label="No video generated." />}
         {video && (
-          <video controls className="w-full aspect-video mt-8 rounded-lg border bg-black">
+          <video
+            controls
+            className="w-full aspect-video mt-8 rounded-lg border bg-black"
+          >
             <source src={video} />
           </video>
         )}
       </div>
     </div>
-   );
-}
- 
+  );
+};
+
 export default VideoPage;

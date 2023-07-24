@@ -17,15 +17,20 @@ export const LandingNavbar = () => {
     <nav className="p-4 bg-transparent flex items-center justify-between">
       <Link href="/" className="flex items-center">
         <div className="relative h-8 w-8 mr-4">
-          <Image fill alt="Logo" src="/logo.png" />
+          <Image fill alt="Logo" src="/logo-citucpe.png" />
         </div>
-        <h1 className={cn("text-2xl font-bold text-white", font.className)}>
+        <h1
+          className={cn("text-2xl font-bold text-maroon-800", font.className)}
+        >
           PlannerAI
         </h1>
       </Link>
       <div className="flex items-center gap-x-2">
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-          <Button variant="outline" className="rounded-full">
+          <Button
+            variant="outline"
+            className="rounded-full border-maroon-800 text-maroon-800"
+          >
             Get Started
           </Button>
         </Link>
