@@ -46,7 +46,7 @@ export async function GET() {
               name: "PlannerAI Pro",
               description: "Unlimited Smart Assistance",
             },
-            unit_amount: 2000,
+            unit_amount: 200,
             recurring: {
               interval: "month",
             },
