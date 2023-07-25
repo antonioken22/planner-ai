@@ -5,6 +5,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ToasterProvider } from "@/components/toaster-provider";
 import { ModalProvider } from "@/components/modal-provider";
 import { CrispProvider } from "@/components/crisp-provider";
+import { AlanProvider } from "@/components/alan-provider";
 
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default async function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
+        <AlanProvider />
         <CrispProvider />
         <body className={font.className}>
           <ToasterProvider />

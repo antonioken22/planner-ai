@@ -10,6 +10,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@alan-ai/alan-sdk-web": "^1.8.48",
     "@clerk/nextjs": "^4.23.0",
     "@hookform/resolvers": "^3.1.1",
     "@prisma/client": "^5.0.0",
