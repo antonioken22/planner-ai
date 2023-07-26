@@ -24,3 +24,15 @@ model UserSubscription {
   stripePriceId          String?   @map(name: "stripe_price_id")
   stripeCurrentPeriodEnd DateTime? @map(name: "stripe_current_period_end")
 }
+
+model Event {
+  id          Int      @id @default(autoincrement())
+  userId      String 
+  title       String
+  description String
+  label       String
+  day         DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+

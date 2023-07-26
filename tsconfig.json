@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/(dashboard)/(routes)/dashboard/page.tsx",
+    "app/(dashboard)/(routes)/dashboard/page.js",
     "components/alan-ai.jsx"
   ],
   "exclude": ["node_modules"]
