@@ -47,6 +47,10 @@ module.exports = {
           800: "#b38600",
           900: "#806a00",
         },
+        fontFamily: {
+          "open-sans": ["Open Sans", "sans-serif"],
+          "material-icons": ["Material Icons", "sans-serif"],
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -102,5 +106,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate", "@tailwindcss/forms")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],
 };
