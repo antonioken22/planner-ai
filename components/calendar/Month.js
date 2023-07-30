@@ -3,8 +3,8 @@ import Day from "./Day";
 export default function Month({ month }) {
   return (
     <div
-      className="flex-1 grid grid-cols-7 grid-rows-5"
-      style={{ gridTemplateRows: "repeat(5, 128px)" }}
+      className="flex-1 grid grid-cols-7"
+      style={{ gridTemplateRows: "repeat(6, minmax(72px, auto))" }}
     >
       {month.map((row, i) => (
         <React.Fragment key={i}>

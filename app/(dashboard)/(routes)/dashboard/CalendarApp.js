@@ -21,14 +21,14 @@ function CalendarApp() {
       {showEventModal && <EventModal />}
 
       <div className="h-screen flex flex-col">
-        <div className="flex justify-center">
+        <div>
           <CalendarHeader />
         </div>
         <div>
           <div className="p-2 flex row-span-1">
             <Sidebar />
           </div>
-          <div className="p-2 flex row-span-2">
+          <div className="ml-2 mr-2 flex row-span-2">
             <Month month={currenMonth} />
           </div>
         </div>

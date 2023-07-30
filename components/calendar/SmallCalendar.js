@@ -44,12 +44,12 @@ export default function SmallCalendar() {
         </p>
         <div>
           <button onClick={handlePrevMonth}>
-            <span className="material-icons-outlined cursor-pointer text-maroon-600 mx-2">
+            <span className="material-icons-outlined cursor-pointer text-maroon-600 sm:mx-2">
               chevron_left
             </span>
           </button>
           <button onClick={handleNextMonth}>
-            <span className="material-icons-outlined cursor-pointer text-maroon-600 mx-2">
+            <span className="material-icons-outlined cursor-pointer text-maroon-600 sm:mx-2">
               chevron_right
             </span>
           </button>
@@ -70,7 +70,7 @@ export default function SmallCalendar() {
                   setSmallCalendarMonth(currentMonthIdx);
                   setDaySelected(day);
                 }}
-                className={`py-1 w-full ${getDayClass(day)}`}
+                className={`sm:py-1 py-0.5 w-full ${getDayClass(day)}`}
               >
                 <span className="text-sm">{day.format("D")}</span>
               </button>

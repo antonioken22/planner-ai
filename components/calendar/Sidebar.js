@@ -9,7 +9,7 @@ export default function Sidebar() {
         <CreateEventButton />
         <SmallCalendar />
       </div>
-      <div className="p-2 border col-span-1">
+      <div className="ml-2 p-2 border col-span-1">
         <Labels />
       </div>
     </aside>
