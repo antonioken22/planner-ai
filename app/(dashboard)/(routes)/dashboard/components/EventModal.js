@@ -110,7 +110,7 @@ export default function EventModal() {
           </div>
         </header>
         <div className="p-3">
-          <div className="grid grid-cols-1/5 items-end gap-y-7">
+          <div className="grid grid-cols-1/5 items-end gap-y-5">
             <div></div>
 
             {/* Event Title */}
@@ -120,13 +120,13 @@ export default function EventModal() {
               placeholder="Event title"
               value={title}
               required
-              className="pt-3 border-0 text-gray-600 text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
+              className="border-0 text-gray-600 text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
               onChange={(e) => setTitle(e.target.value)}
             />
 
             {/* Date Selected */}
             <div className="flex justify-normal">
-              <span className="text-maroon-400">
+              <span className="text-maroon-800">
                 <CalendarCheck />
               </span>
               <p className="ml-3 text-maroon-800">
@@ -135,7 +135,7 @@ export default function EventModal() {
             </div>
 
             {/* Start Time */}
-            <div className="p-3">
+            <div>
               <div className="grid grid-cols-2 items-center gap-x-2">
                 <label htmlFor="startTime" className="text-maroon-600">
                   Start Time:
@@ -153,7 +153,7 @@ export default function EventModal() {
             </div>
 
             {/* End Time */}
-            <div className="p-3">
+            <div>
               <div className="grid grid-cols-2 items-center gap-x-2">
                 <label htmlFor="endTime" className="text-maroon-600">
                   End Time:
