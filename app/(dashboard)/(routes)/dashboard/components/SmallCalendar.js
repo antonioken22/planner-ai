@@ -40,27 +40,27 @@ export default function SmallCalendar() {
     }
   }
   return (
-    <div className="mt-4">
+    <div className="sm:mt-4 mt-2">
       <header className="flex justify-between">
-        <p className="text-maroon-500 font-bold">
+        <p className="sm:text-base text-sm text-maroon-500 font-bold">
           {dayjs(new Date(dayjs().year(), currentMonthIdx)).format("MMMM YYYY")}
         </p>
         <div>
           <button onClick={handlePrevMonth}>
             <span className="cursor-pointer text-maroon-600 ">
-              <ChevronLeft />
+              <ChevronLeft className="sm:w-6 sm:h-6 w-5 h-5" />
             </span>
           </button>
           <button onClick={handleNextMonth}>
             <span className="cursor-pointer text-maroon-600 ">
-              <ChevronRight />
+              <ChevronRight className="sm:w-6 sm:h-6 w-5 h-5" />
             </span>
           </button>
         </div>
       </header>
       <div className="grid grid-cols-7 grid-rows-6">
         {currentMonth[0].map((day, i) => (
-          <span key={i} className="text-xs py-1 text-center">
+          <span key={i} className="text-xs text-center">
             {day.format("dd").charAt(0)}
           </span>
         ))}
@@ -73,7 +73,7 @@ export default function SmallCalendar() {
                   setSmallCalendarMonth(currentMonthIdx);
                   setDaySelected(day);
                 }}
-                className={`sm:py-1 py-0.5 w-full ${getDayClass(day)}`}
+                className={`sm:py-1 w-full ${getDayClass(day)}`}
               >
                 <span className="text-sm">{day.format("D")}</span>
               </button>
