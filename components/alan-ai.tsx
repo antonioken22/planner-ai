@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 
@@ -7,8 +9,7 @@ interface CommandData {
 
 export const AlanAI = () => {
   useEffect(() => {
-    const alanKey =
-      "68a1c5c9eb55651c06abca5c77a850da2e956eca572e1d8b807a3e2338fdd0dc/stage";
+    const alanKey = process.env.NEXT_PUBLIC_ALAN_SDK_KEY!;
 
     alanBtn({
       key: alanKey,
