@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/(dashboard)/(routes)/dashboard/page.js",
-    "components/alan-ai.jsx"
+    "components/alan-ai.jsx",
+    "app/(dashboard)/(routes)/dashboard/components/alan-ai.js"
   ],
   "exclude": ["node_modules"]
 }

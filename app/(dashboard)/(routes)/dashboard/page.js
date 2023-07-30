@@ -2,6 +2,7 @@
 
 import React from "react";
 import CalendarApp from "./CalendarApp";
+import AlanAI from "./components/AlanAI";
 
 import ContextWrapper from "./context/ContextWrapper";
 
@@ -18,6 +19,7 @@ export default function HomePage() {
       </div>
       <div>
         <ContextWrapper>
+          <AlanAI />
           <CalendarApp />
         </ContextWrapper>
       </div>
