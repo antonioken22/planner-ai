@@ -81,7 +81,7 @@ export default function EventModal() {
   }
 
   return (
-    <div className="fixed left-0 top-0 flex justify-center items-center w-full h-screen">
+    <div className="fixed left-0 top-25 flex justify-center items-center w-full">
       <form className="bg-white rounded-lg shadow-2xl w-96 max-h-screen">
         <header className="bg-maroon-100 px-4 py-2 flex justify-between items-center">
           <span className="text-maroon-400">
