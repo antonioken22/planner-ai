@@ -1,7 +1,10 @@
 import Image from "next/image";
+import logo from "@/public/calendar.png";
+import { ChevronLeft } from "lucide-react";
+import { ChevronRight } from "lucide-react";
+
 import dayjs from "dayjs";
 import React, { useContext } from "react";
-import logo from "../../public/calendar.png";
 import GlobalContext from "../context/GlobalContext";
 export default function CalendarHeader() {
   const { monthIndex, setMonthIndex } = useContext(GlobalContext);
@@ -31,13 +34,13 @@ export default function CalendarHeader() {
         Today
       </button>
       <button onClick={handlePrevMonth}>
-        <span className="material-icons-outlined cursor-pointer text-maroon-800 sm:mx-2 mx-0">
-          chevron_left
+        <span className="cursor-pointer text-maroon-800">
+          <ChevronLeft />
         </span>
       </button>
       <button onClick={handleNextMonth}>
-        <span className="material-icons-outlined cursor-pointer text-maroon-800 sm:mx-2 mx-0">
-          chevron_right
+        <span className="cursor-pointer text-maroon-800">
+          <ChevronRight />
         </span>
       </button>
       <h2 className="sm:ml-6 ml-2 sm:text-xl text-base text-maroon-800 font-bold items=">

@@ -11,9 +11,7 @@ module.exports = {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-    "./components/**/*.{js,jsx,ts,tsx}",
+    "./app/**/*.{ts,tsx,js,jsx}",
   ],
   theme: {
     container: {
@@ -46,10 +44,6 @@ module.exports = {
           700: "#e6a200",
           800: "#b38600",
           900: "#806a00",
-        },
-        fontFamily: {
-          "open-sans": ["Open Sans", "sans-serif"],
-          "material-icons": ["Material Icons", "sans-serif"],
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -3,7 +3,7 @@
 import React from "react";
 import CalendarApp from "./CalendarApp";
 
-import ContextWrapper from "@/components/context/ContextWrapper";
+import ContextWrapper from "./context/ContextWrapper";
 
 export default function HomePage() {
   return (
