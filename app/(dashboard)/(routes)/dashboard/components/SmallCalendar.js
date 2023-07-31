@@ -34,7 +34,7 @@ export default function SmallCalendar() {
     if (nowDay === currDay) {
       return "bg-maroon-500 rounded-full text-white";
     } else if (currDay === slcDay) {
-      return "bg-maroon-100 rounded-full text-gray-600 font-bold";
+      return "bg-maroon-100 rounded-full text-gray-600";
     } else {
       return "";
     }
