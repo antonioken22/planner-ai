@@ -22,7 +22,7 @@ const AlanAI = () => {
         }
       },
     });
-  }, []);
+  }, [setShowEventModal]);
 
   return null;
 };

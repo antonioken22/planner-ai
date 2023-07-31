@@ -5,12 +5,12 @@ import Labels from "./Labels";
 
 export default function Sidebar() {
   return (
-    <aside className="w-screen grid grid-cols-2">
-      <div className="p-2 border col-span-1">
+    <aside className="w-full flex flex-row justify-normal">
+      <div className="p-2 border">
         <CreateEventButton />
         <SmallCalendar />
       </div>
-      <div className="ml-2 p-2 border col-span-1">
+      <div className="ml-2 p-2">
         <Labels />
       </div>
     </aside>
