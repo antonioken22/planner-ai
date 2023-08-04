@@ -1,5 +1,6 @@
-import Image from "next/image";
 import React, { useContext } from "react";
+
+import Image from "next/image";
 import plusImg from "@/public/plus.png";
 import GlobalContext from "../context/GlobalContext";
 

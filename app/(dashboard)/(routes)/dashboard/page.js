@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import CalendarApp from "./CalendarApp";
-import AlanAI from "./components/AlanAI";
 
+import AlanAI from "./components/AlanAI";
+import CalendarApp from "./CalendarApp";
 import ContextWrapper from "./context/ContextWrapper";
 
 export default function HomePage() {

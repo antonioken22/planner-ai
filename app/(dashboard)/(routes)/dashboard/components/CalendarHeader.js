@@ -1,11 +1,12 @@
+import React, { useContext } from "react";
+import dayjs from "dayjs";
+
 import Image from "next/image";
 import logo from "@/public/calendar.png";
 import { ChevronLeft } from "lucide-react";
 import { ChevronRight } from "lucide-react";
-
-import dayjs from "dayjs";
-import React, { useContext } from "react";
 import GlobalContext from "../context/GlobalContext";
+
 export default function CalendarHeader() {
   const { monthIndex, setMonthIndex } = useContext(GlobalContext);
   function handlePrevMonth() {

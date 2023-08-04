@@ -2,11 +2,12 @@
 
 import { useContext, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
+
 import GlobalContext from "../context/GlobalContext";
 
 const alanKey = process.env.NEXT_PUBLIC_ALAN_SDK_KEY;
 
-const AlanAI = () => {
+export default function AlanAI() {
   const { setShowEventModal } = useContext(GlobalContext);
 
   useEffect(() => {
@@ -25,6 +26,4 @@ const AlanAI = () => {
   }, [setShowEventModal]);
 
   return null;
-};
-
-export default AlanAI;
+}

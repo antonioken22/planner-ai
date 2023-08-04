@@ -1,3 +1,5 @@
+import React, { useContext, useState, useEffect } from "react";
+
 import { Grip } from "lucide-react";
 import { Trash2 } from "lucide-react";
 import { X } from "lucide-react";
@@ -5,8 +7,6 @@ import { CalendarCheck } from "lucide-react";
 import { Text } from "lucide-react";
 import { Bookmark } from "lucide-react";
 import { Check } from "lucide-react";
-
-import React, { useContext, useState, useEffect } from "react";
 import GlobalContext from "../context/GlobalContext";
 
 const labelsClasses = ["indigo", "gray", "green", "blue", "red", "purple"];

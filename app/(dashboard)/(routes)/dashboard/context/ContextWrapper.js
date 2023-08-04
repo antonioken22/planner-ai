@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useReducer, useMemo } from "react";
-import GlobalContext from "./GlobalContext";
 import dayjs from "dayjs";
+
+import GlobalContext from "./GlobalContext";
 
 function savedEventsReducer(state, { type, payload }) {
   switch (type) {
