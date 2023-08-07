@@ -8,7 +8,8 @@ import GlobalContext from "../context/GlobalContext";
 const alanKey = process.env.NEXT_PUBLIC_ALAN_SDK_KEY;
 
 export default function AlanAI() {
-  const { setShowEventModal } = useContext(GlobalContext);
+  const { setShowEventModal, daySelected } = useContext(GlobalContext);
+  const [currentMonthIdx, setCurrentMonthIdx] = useState(dayjs().month());
 
   useEffect(() => {
     alanBtn({
