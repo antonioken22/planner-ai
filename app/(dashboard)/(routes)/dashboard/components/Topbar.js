@@ -4,7 +4,7 @@ import CreateEventButton from "./CreateEventButton";
 import SmallCalendar from "./SmallCalendar";
 import Labels from "./Labels";
 
-export default function Sidebar() {
+export default function Topbar() {
   return (
     <aside className="w-full flex flex-row justify-normal">
       <div className="p-2 border">

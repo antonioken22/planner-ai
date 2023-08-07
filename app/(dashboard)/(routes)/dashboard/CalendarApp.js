@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 
 import CalendarHeader from "./components/CalendarHeader";
-import Sidebar from "./components/Sidebar";
+import Topbar from "./components/Topbar";
 import Month from "./components/Month";
 import EventModal from "./components/EventModal";
 
@@ -26,7 +26,7 @@ function CalendarApp() {
         </div>
         <div>
           <div className="p-2 row-span-1">
-            <Sidebar />
+            <Topbar />
           </div>
           <div className="ml-2 mr-2 row-span-1">
             <Month month={currenMonth} />
