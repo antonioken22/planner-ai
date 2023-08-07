@@ -15,6 +15,7 @@ function savedEventsReducer(state, { type, payload }) {
       throw new Error();
   }
 }
+
 function initEvents() {
   const storageEvents = localStorage.getItem("savedEvents");
   const parsedEvents = storageEvents ? JSON.parse(storageEvents) : [];
@@ -33,6 +34,8 @@ export default function ContextWrapper(props) {
     [],
     initEvents
   );
+  const [alanEventData, setAlanEventData] = useState(null);
+  const [isSubmitted, setSubmitted] = useState(false);
 
   const filteredEvents = useMemo(() => {
     return savedEvents.filter((evt) =>
@@ -94,6 +97,10 @@ export default function ContextWrapper(props) {
         labels,
         updateLabel,
         filteredEvents,
+        alanEventData,
+        setAlanEventData,
+        isSubmitted,
+        setSubmitted,
       }}
     >
       {props.children}

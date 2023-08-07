@@ -12,10 +12,28 @@ import GlobalContext from "../context/GlobalContext";
 const labelsClasses = ["indigo", "gray", "green", "blue", "red", "purple"];
 
 export default function EventModal() {
-  const { setShowEventModal, daySelected, dispatchCalEvent, selectedEvent } =
-    useContext(GlobalContext);
+  const {
+    setShowEventModal,
+    daySelected,
+    dispatchCalEvent,
+    selectedEvent,
+    alanEventData,
+    isSubmitted,
+    setSubmitted,
+  } = useContext(GlobalContext);
 
   const [title, setTitle] = useState(selectedEvent ? selectedEvent.title : "");
+
+  useEffect(() => {
+    if (alanEventData) {
+      const { title, description, label } = alanEventData;
+      setTitle(title || "");
+      setDescription(description || "");
+      setSelectedLabel(
+        labelsClasses.find((lbl) => lbl === label) || labelsClasses[0]
+      );
+    }
+  }, [alanEventData]);
 
   const [description, setDescription] = useState(
     selectedEvent ? selectedEvent.description : ""
@@ -60,8 +78,7 @@ export default function EventModal() {
     setEndTime(selectedEvent ? selectedEvent.endTime : formattedEndTime);
   }, [selectedEvent]);
 
-  function handleSubmit(e) {
-    e.preventDefault();
+  if (isSubmitted) {
     const calendarEvent = {
       id: selectedEvent ? selectedEvent.id : Date.now(),
       title,
@@ -77,6 +94,7 @@ export default function EventModal() {
       dispatchCalEvent({ type: "push", payload: calendarEvent });
     }
 
+    setSubmitted(false);
     setShowEventModal(false);
   }
 
@@ -212,7 +230,10 @@ export default function EventModal() {
         <footer className="flex justify-end border-t p-3 mt-5">
           <button
             type="submit"
-            onClick={handleSubmit}
+            onClick={(e) => {
+              e.preventDefault();
+              setSubmitted(true);
+            }}
             className="bg-maroon-500 hover:bg-maroon-600 px-6 py-2 rounded text-white"
           >
             Save
