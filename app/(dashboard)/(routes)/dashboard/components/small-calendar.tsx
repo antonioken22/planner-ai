@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import dayjs from "dayjs";
+import dayjs, { Dayjs } from "dayjs";
 
-import { ChevronLeft } from "lucide-react";
-import { ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 import { getMonth } from "../util";
-import GlobalContext from "../context/GlobalContext";
+import GlobalContext from "../context/global-context";
 
 export default function SmallCalendar() {
   const [currentMonthIdx, setCurrentMonthIdx] = useState(dayjs().month());
@@ -26,7 +26,7 @@ export default function SmallCalendar() {
   function handleNextMonth() {
     setCurrentMonthIdx(currentMonthIdx + 1);
   }
-  function getDayClass(day) {
+  function getDayClass(day: Dayjs) {
     const format = "DD-MM-YY";
     const nowDay = dayjs().format(format);
     const currDay = day.format(format);

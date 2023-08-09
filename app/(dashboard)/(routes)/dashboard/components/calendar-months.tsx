@@ -1,8 +1,12 @@
 import React from "react";
 
-import Day from "./Day";
+import CalendarDays from "./calendar-days";
 
-export default function Month({ month }) {
+interface MonthProps {
+  month: Array<Array<any>>;
+}
+
+const CalendarMonths: React.FC<MonthProps> = ({ month }) => {
   return (
     <div
       className="flex-1 grid grid-cols-7"
@@ -11,10 +15,12 @@ export default function Month({ month }) {
       {month.map((row, i) => (
         <React.Fragment key={i}>
           {row.map((day, idx) => (
-            <Day day={day} key={idx} rowIdx={i} />
+            <CalendarDays day={day} key={idx} rowIdx={i} />
           ))}
         </React.Fragment>
       ))}
     </div>
   );
-}
+};
+
+export default CalendarMonths;

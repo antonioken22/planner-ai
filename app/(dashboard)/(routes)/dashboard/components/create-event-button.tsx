@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 
 import Image from "next/image";
 import plusImg from "@/public/plus.png";
-import GlobalContext from "../context/GlobalContext";
+
+import GlobalContext from "../context/global-context";
 
 export default function CreateEventButton() {
   const { setShowEventModal } = useContext(GlobalContext);

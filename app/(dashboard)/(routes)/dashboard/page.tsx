@@ -2,9 +2,9 @@
 
 import React from "react";
 
-import AlanAI from "./components/AlanAI";
-import CalendarApp from "./CalendarApp";
-import ContextWrapper from "./context/ContextWrapper";
+import AlanAI from "./components/alan-ai";
+import CalendarApp from "./calendar-app";
+import ContextWrapper from "./context/context-wrapper";
 
 export default function HomePage() {
   return (

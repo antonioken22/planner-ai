@@ -1,8 +1,8 @@
 import React from "react";
 
-import CreateEventButton from "./CreateEventButton";
-import SmallCalendar from "./SmallCalendar";
-import Labels from "./Labels";
+import CreateEventButton from "./create-event-button";
+import SmallCalendar from "./small-calendar";
+import EventLabels from "./event-labels";
 
 export default function Topbar() {
   return (
@@ -12,7 +12,7 @@ export default function Topbar() {
         <SmallCalendar />
       </div>
       <div className="ml-2 p-2">
-        <Labels />
+        <EventLabels />
       </div>
     </aside>
   );

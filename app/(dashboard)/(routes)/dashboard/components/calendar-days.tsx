@@ -1,10 +1,15 @@
-import dayjs from "dayjs";
+import dayjs, { Dayjs } from "dayjs";
 import React, { useContext, useState, useEffect } from "react";
 
-import GlobalContext from "../context/GlobalContext";
+import GlobalContext, { Event as EventType } from "../context/global-context";
 
-export default function Day({ day, rowIdx }) {
-  const [dayEvents, setDayEvents] = useState([]);
+interface DayProps {
+  day: Dayjs;
+  rowIdx: number;
+}
+
+export default function CalendarDays({ day, rowIdx }: DayProps) {
+  const [dayEvents, setDayEvents] = useState<EventType[]>([]);
   const {
     setDaySelected,
     setShowEventModal,
@@ -24,13 +29,14 @@ export default function Day({ day, rowIdx }) {
       ? "bg-maroon-800 text-white rounded-full w-7"
       : "";
   }
+
   return (
     <div className="border border-maroon-800 flex flex-col">
       <header className="flex flex-col items-center">
         {rowIdx === 0 && (
           <p className="text-xs mt-1">{day.format("ddd").toUpperCase()}</p>
         )}
-        <p className={`text-sm p-1 my-1 text-center  ${getCurrentDayClass()}`}>
+        <p className={`text-sm p-1 my-1 text-center ${getCurrentDayClass()}`}>
           {day.format("DD")}
         </p>
       </header>

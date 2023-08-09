@@ -1,12 +1,12 @@
 "use client";
 
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import dayjs from "dayjs";
 
-import GlobalContext from "../context/GlobalContext";
+import GlobalContext, { AlanEvent } from "../context/global-context";
 
-const alanKey = process.env.NEXT_PUBLIC_ALAN_SDK_KEY;
+const alanKey: string = process.env.NEXT_PUBLIC_ALAN_SDK_KEY!;
 
 export default function AlanAI() {
   const { setShowEventModal, setDaySelected, setAlanEventData, setSubmitted } =
@@ -15,7 +15,9 @@ export default function AlanAI() {
   useEffect(() => {
     alanBtn({
       key: alanKey,
-      onCommand: ({ command, data }) => {
+      onCommand: (commandData: any) => {
+        const { command, data }: { command: string; data: AlanEvent } =
+          commandData;
         switch (command) {
           case "createEvent":
             setDaySelected(dayjs(data.selectedDay));

@@ -1,13 +1,16 @@
 import React, { useContext, useState, useEffect } from "react";
 
-import { Grip } from "lucide-react";
-import { Trash2 } from "lucide-react";
-import { X } from "lucide-react";
-import { CalendarCheck } from "lucide-react";
-import { Text } from "lucide-react";
-import { Bookmark } from "lucide-react";
-import { Check } from "lucide-react";
-import GlobalContext from "../context/GlobalContext";
+import {
+  Grip,
+  Trash2,
+  X,
+  CalendarCheck,
+  Text,
+  Bookmark,
+  Check,
+} from "lucide-react";
+
+import GlobalContext from "../context/global-context";
 
 const labelsClasses = ["indigo", "gray", "green", "blue", "red", "purple"];
 
@@ -44,49 +47,18 @@ export default function EventModal() {
       : labelsClasses[0]
   );
 
-  const [startTime, setStartTime] = useState(null);
-  const [endTime, setEndTime] = useState(null);
-
-  useEffect(() => {
-    const currentTime = new Date();
-    const minutes = currentTime.getMinutes();
-
-    let startHour;
-    let startMinutes;
-
-    if (minutes >= 0 && minutes <= 29) {
-      startHour = currentTime.getHours();
-      startMinutes = "30";
-    } else {
-      startHour = currentTime.getHours() + 1;
-      startMinutes = "00";
-    }
-
-    const defaultEndTime = new Date(currentTime);
-    defaultEndTime.setHours(startHour + 1);
-    defaultEndTime.setMinutes(startMinutes);
-
-    const formattedStartTime = `${startHour
-      .toString()
-      .padStart(2, "0")}:${startMinutes}`;
-    const formattedEndTime = `${defaultEndTime
-      .getHours()
-      .toString()
-      .padStart(2, "0")}:${startMinutes}`;
-
-    setStartTime(selectedEvent ? selectedEvent.startTime : formattedStartTime);
-    setEndTime(selectedEvent ? selectedEvent.endTime : formattedEndTime);
-  }, [selectedEvent]);
+  const [startTime, setStartTime] = useState("");
+  const [endTime, setEndTime] = useState("");
 
   if (isSubmitted) {
     const calendarEvent = {
       id: selectedEvent ? selectedEvent.id : Date.now(),
       title,
-      day: daySelected.valueOf(),
+      day: daySelected?.valueOf(),
       startTime,
       endTime,
       description,
-      label: selectedLabel,
+      label: selectedLabel!,
     };
     if (selectedEvent) {
       dispatchCalEvent({ type: "update", payload: calendarEvent });
@@ -148,7 +120,7 @@ export default function EventModal() {
                 <CalendarCheck />
               </span>
               <p className="ml-3 text-maroon-800">
-                {daySelected.format("dddd, MMMM DD")}
+                {daySelected?.format("dddd, MMMM DD")}
               </p>
             </div>
 

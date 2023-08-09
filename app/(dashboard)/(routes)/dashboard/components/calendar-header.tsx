@@ -3,9 +3,9 @@ import dayjs from "dayjs";
 
 import Image from "next/image";
 import logo from "@/public/calendar.png";
-import { ChevronLeft } from "lucide-react";
-import { ChevronRight } from "lucide-react";
-import GlobalContext from "../context/GlobalContext";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+import GlobalContext from "../context/global-context";
 
 export default function CalendarHeader() {
   const { monthIndex, setMonthIndex } = useContext(GlobalContext);

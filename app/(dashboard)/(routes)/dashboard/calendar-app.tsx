@@ -1,11 +1,11 @@
 import React, { useState, useContext, useEffect } from "react";
 
-import CalendarHeader from "./components/CalendarHeader";
-import Topbar from "./components/Topbar";
-import Month from "./components/Month";
-import EventModal from "./components/EventModal";
+import CalendarHeader from "./components/calendar-header";
+import Topbar from "./components/top-bar";
+import CalendarMonths from "./components/calendar-months";
+import EventModal from "./components/event-modal";
 
-import GlobalContext from "./context/GlobalContext";
+import GlobalContext from "./context/global-context";
 import { getMonth } from "./util";
 
 function CalendarApp() {
@@ -29,7 +29,7 @@ function CalendarApp() {
             <Topbar />
           </div>
           <div className="ml-2 mr-2 row-span-1">
-            <Month month={currenMonth} />
+            <CalendarMonths month={currenMonth} />
           </div>
         </div>
       </div>

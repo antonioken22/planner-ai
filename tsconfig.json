@@ -28,9 +28,13 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/(dashboard)/(routes)/dashboard/page.js",
+    "app/(dashboard)/(routes)/dashboard/page.ts",
     "components/alan-ai.jsx",
-    "app/(dashboard)/(routes)/dashboard/components/alan-ai.js"
+    "app/(dashboard)/(routes)/dashboard/components/alan-ai.ts",
+    "app/(dashboard)/(routes)/dashboard/components/calendar-days.tsx",
+    "app/(dashboard)/(routes)/dashboard/components/event-modal.tsx",
+    "app/(dashboard)/(routes)/dashboard/components/event-labels.tsx",
+    "app/(dashboard)/(routes)/dashboard/components/calendar-months.tsx"
   ],
   "exclude": ["node_modules"]
 }
