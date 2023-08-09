@@ -11,7 +11,7 @@ module.exports = {
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx,js,jsx}",
+    "./app/**/*.{ts,tsx}",
   ],
   theme: {
     container: {
