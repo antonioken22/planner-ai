@@ -80,11 +80,9 @@ module.exports = {
         },
         goldPrimary: {
           DEFAULT: "hsl(var(--gold))",
-          foreground: "hsl(var(--gold-foreground))",
         },
         maroonPrimary: {
           DEFAULT: "hsl(var(--maroon))",
-          foreground: "hsl(var(--maroon-foreground))",
         },
       },
       borderRadius: {
