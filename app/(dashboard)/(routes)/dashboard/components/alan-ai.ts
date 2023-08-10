@@ -24,6 +24,9 @@ export default function AlanAI() {
             setAlanEventData(data);
             setShowEventModal(true);
             break;
+          case "updateSelectedDay":
+            setDaySelected(dayjs(data.selectedDay));
+            break;
           case "updateTitle":
             setAlanEventData(data);
             break;
