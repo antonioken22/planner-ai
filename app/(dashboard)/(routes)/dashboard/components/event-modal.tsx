@@ -136,9 +136,16 @@ export default function EventModal() {
                   name="startTime"
                   required
                   value={startTime}
-                  className="pt-1 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
+                  className="pt-1 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500 relative"
+                  style={{ paddingRight: "2.5rem" }} // Add some padding to accommodate the pseudo-element
                   onChange={(e) => setStartTime(e.target.value)}
                 />
+                <span
+                  className="absolute right-1 bottom-1 text-blue-500"
+                  style={{ pointerEvents: "none" }}
+                >
+                  🕒
+                </span>
               </div>
             </div>
 

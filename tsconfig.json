@@ -34,7 +34,8 @@
     "app/(dashboard)/(routes)/dashboard/components/calendar-days.tsx",
     "app/(dashboard)/(routes)/dashboard/components/event-modal.tsx",
     "app/(dashboard)/(routes)/dashboard/components/event-labels.tsx",
-    "app/(dashboard)/(routes)/dashboard/components/calendar-months.tsx"
+    "app/(dashboard)/(routes)/dashboard/components/calendar-months.tsx",
+    "next.config.js"
   ],
   "exclude": ["node_modules"]
 }
