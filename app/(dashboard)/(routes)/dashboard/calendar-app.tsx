@@ -20,7 +20,7 @@ function CalendarApp() {
     <div>
       {showEventModal && <EventModal />}
 
-      <div className="h-screen flex flex-col">
+      <div className="flex flex-col">
         <div className="row-span-1">
           <CalendarHeader />
         </div>

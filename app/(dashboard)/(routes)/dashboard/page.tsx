@@ -8,7 +8,7 @@ import ContextWrapper from "./context/context-wrapper";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="w-full h-screen">
       <div className="mb-4 space-y-2">
         <h2 className="text-2xl font-bold text-center text-maroon-800">
           Improve Your Productivity
