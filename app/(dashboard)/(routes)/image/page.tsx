@@ -116,7 +116,7 @@ const PhotoPage = () => {
                     value={field.value}
                     defaultValue={field.value}
                   >
-                    <FormControl>
+                    <FormControl className="bg-secondary">
                       <SelectTrigger>
                         <SelectValue defaultValue={field.value} />
                       </SelectTrigger>
@@ -143,7 +143,7 @@ const PhotoPage = () => {
                     value={field.value}
                     defaultValue={field.value}
                   >
-                    <FormControl>
+                    <FormControl className="bg-secondary">
                       <SelectTrigger>
                         <SelectValue defaultValue={field.value} />
                       </SelectTrigger>

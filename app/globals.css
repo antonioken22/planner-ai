@@ -40,6 +40,12 @@ body,
     --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
+
+    --gold: 0 100% 25.1%;
+    --gold-foreground: 42.3 100% 45.1%;
+
+    --maroon: 42.3 100% 45.1%;
+    --maroon-foreground: 0 100% 25.1%;
   }
 
   .dark {
@@ -71,6 +77,12 @@ body,
     --destructive-foreground: 0 85.7% 97.3%;
 
     --ring: 217.2 32.6% 17.5%;
+
+    --gold: 42.3 100% 45.1%;
+    --gold-foreground: 0 100% 25.1%;
+
+    --maroon: 0 100% 25.1%;
+    --maroon-foreground: 42.3 100% 45.1%;
   }
 }
 

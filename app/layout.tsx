@@ -6,6 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { ToasterProvider } from "@/components/toaster-provider";
 import { ModalProvider } from "@/components/modal-provider";
 import { CrispProvider } from "@/components/crisp-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 import "./globals.css";
 
@@ -31,10 +32,12 @@ export default async function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <CrispProvider />
         <body className={font.className}>
-          <ToasterProvider />
-          <ModalProvider />
-          {children}
-          <Analytics />
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+            <ToasterProvider />
+            <ModalProvider />
+            {children}
+            <Analytics />
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>

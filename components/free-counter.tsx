@@ -38,7 +38,7 @@ export const FreeCounter = ({
               {apiLimitCount} / {MAX_FREE_COUNTS} Free Generations
             </p>
             <Progress
-              className="h-3"
+              className="h-3 bg-white"
               value={(apiLimitCount / MAX_FREE_COUNTS) * 100}
             />
           </div>

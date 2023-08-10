@@ -23,43 +23,43 @@ const routes = [
   {
     label: "Dashboard",
     icon: LayoutDashboard,
-    color: "text-maroon-800",
+    color: "text-goldPrimary",
     href: "/dashboard",
   },
   {
     label: "Conversation",
     icon: MessageSquare,
-    color: "text-maroon-800",
+    color: "text-goldPrimary",
     href: "/conversation",
   },
   {
     label: "Code Generation",
     icon: Code,
-    color: "text-maroon-800",
+    color: "text-goldPrimary",
     href: "/code",
   },
   {
     label: "Image Generation",
     icon: ImageIcon,
-    color: "text-maroon-800",
+    color: "text-goldPrimary",
     href: "/image",
   },
   {
     label: "Music Generation",
     icon: Music,
-    color: "text-maroon-800",
+    color: "text-goldPrimary",
     href: "/music",
   },
   {
     label: "Video Generation",
     icon: VideoIcon,
-    color: "text-maroon-800",
+    color: "text-goldPrimary",
     href: "/video",
   },
   {
     label: "Settings",
     icon: Settings,
-    color: "text-maroon-800",
+    color: "text-goldPrimary",
     href: "/settings",
   },
 ];
@@ -74,7 +74,7 @@ export const Sidebar = ({
   const pathname = usePathname();
 
   return (
-    <div className="space-y-4 py-4 flex flex-col h-full bg-gradient-to-b bg-gold-700 text-white">
+    <div className="space-y-4 py-4 flex flex-col h-full bg-gradient-to-b bg-maroonPrimary text-white">
       <div className="px-3 py-2 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative h-8 w-8 mr-4">
@@ -82,7 +82,7 @@ export const Sidebar = ({
           </div>
           <h1
             className={cn(
-              "text-2xl font-bold text-maroon-800",
+              "text-2xl font-bold text-goldPrimary",
               montserrat.className
             )}
           >
