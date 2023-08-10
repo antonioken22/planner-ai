@@ -25,12 +25,12 @@ export default function CalendarHeader() {
   return (
     <header className="px-2 py-2 flex justify-normal items-center">
       <Image src={logo} alt="calendar" className="mr-2 w-6 h-6" />
-      <h1 className="sm:mr-2 mr-0 sm:text-base text-sm text-maroon-800 fond-bold">
+      <h1 className="sm:mr-2 mr-0 sm:text-base text-xs text-maroon-800 fond-bold">
         Events Calendar
       </h1>
       <button
         onClick={handleReset}
-        className="text-maroon-800 border border-maroon-800 rounded text-sm sm:py-1.5 py-1 sm:px-3 sm:mr-3 sm:ml-3 px-2 mr-2 ml-2"
+        className="text-maroon-800 border border-maroon-800 rounded text-xs sm:py-1.5 py-1 sm:px-3 sm:mr-3 sm:ml-3 px-2 mr-2 ml-2"
       >
         Today
       </button>
@@ -44,7 +44,7 @@ export default function CalendarHeader() {
           <ChevronRight />
         </span>
       </button>
-      <h2 className="sm:ml-3 ml-2 sm:text-base text-sm text-maroon-800 font-bold items=">
+      <h2 className="sm:ml-3 ml-2 sm:text-base text-xs text-maroon-800 font-bold items=">
         {dayjs(new Date(dayjs().year(), monthIndex)).format("MMMM YYYY")}
       </h2>
     </header>
