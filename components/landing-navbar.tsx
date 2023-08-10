@@ -29,7 +29,7 @@ export const LandingNavbar = () => {
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
           <Button
             variant="outline"
-            className="rounded-full border-maroon-800 text-maroon-800"
+            className="rounded-full border-maroon-800 text-maroon-800 hover:text-maroon-900 bg-transparent hover:bg-maroon-100/40"
           >
             Get Started
           </Button>

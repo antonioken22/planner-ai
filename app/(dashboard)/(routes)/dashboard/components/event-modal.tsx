@@ -72,8 +72,8 @@ export default function EventModal() {
 
   return (
     <div className="fixed left-0 top-20 flex justify-center items-center w-full">
-      <form className="bg-white rounded-lg shadow-2xl w-96 max-h-screen">
-        <header className="bg-maroon-100 px-4 py-2 flex justify-between items-center">
+      <form className="bg-background rounded-lg shadow-2xl w-96 max-h-screen">
+        <header className="bg-goldPrimary/40 px-4 py-2 flex justify-between items-center">
           <span className="text-maroon-400">
             <Grip />
           </span>
@@ -110,7 +110,7 @@ export default function EventModal() {
               placeholder="Event title"
               value={title}
               required
-              className="border-0 text-gray-600 text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
+              className="bg-background border-0 text-primary text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
               onChange={(e) => setTitle(e.target.value)}
             />
 
@@ -136,16 +136,9 @@ export default function EventModal() {
                   name="startTime"
                   required
                   value={startTime}
-                  className="pt-1 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500 relative"
-                  style={{ paddingRight: "2.5rem" }} // Add some padding to accommodate the pseudo-element
+                  className="bg-background pt-1 border-0 text-primary pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
                   onChange={(e) => setStartTime(e.target.value)}
                 />
-                <span
-                  className="absolute right-1 bottom-1 text-blue-500"
-                  style={{ pointerEvents: "none" }}
-                >
-                  🕒
-                </span>
               </div>
             </div>
 
@@ -161,7 +154,7 @@ export default function EventModal() {
                   name="endTime"
                   required
                   value={endTime}
-                  className="pt-1 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
+                  className="bg-background pt-1 border-0 text-primary pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
                   onChange={(e) => setEndTime(e.target.value)}
                 />
               </div>
@@ -178,7 +171,7 @@ export default function EventModal() {
                 placeholder="Event description"
                 value={description}
                 required
-                className="ml-2 pt-3 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
+                className="bg-background ml-2 pt-3 border-0 text-primary pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-maroon-500"
                 onChange={(e) => setDescription(e.target.value)}
               />
             </div>

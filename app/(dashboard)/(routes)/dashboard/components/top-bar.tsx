@@ -30,7 +30,7 @@ export default function Topbar() {
             </TooltipTrigger>
             <TooltipContent>
               <p>
-                Try clicking the mic icon below and say, "Set an event today."
+                Try clicking the mic icon below and say, Set an [event] [today].
               </p>
             </TooltipContent>
           </Tooltip>

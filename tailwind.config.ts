@@ -78,11 +78,11 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        goldPrimary: {
-          DEFAULT: "hsl(var(--gold))",
-        },
         maroonPrimary: {
           DEFAULT: "hsl(var(--maroon))",
+        },
+        goldPrimary: {
+          DEFAULT: "hsl(var(--gold))",
         },
       },
       borderRadius: {
