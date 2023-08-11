@@ -28,9 +28,10 @@ export default function Topbar() {
             <TooltipTrigger>
               <CreateEventButton />
             </TooltipTrigger>
-            <TooltipContent>
+            <TooltipContent className="ml-2">
               <p>
-                Try clicking the mic icon below and say, Set an [event] [today].
+                Try clicking the mic icon below and say, <br></br>
+                Set [Event title] for [Date].
               </p>
             </TooltipContent>
           </Tooltip>

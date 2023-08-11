@@ -98,7 +98,7 @@ const PhotoPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading}
-                      placeholder="A Technologian at the top of a coconut tree"
+                      placeholder="A wildcat in maroon and gold"
                       {...field}
                     />
                   </FormControl>

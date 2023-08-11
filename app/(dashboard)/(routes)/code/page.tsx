@@ -96,7 +96,7 @@ const CodePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Binary Search Tree algorithm in C"
+                        placeholder="Binary search tree algorithm in C"
                         {...field}
                       />
                     </FormControl>

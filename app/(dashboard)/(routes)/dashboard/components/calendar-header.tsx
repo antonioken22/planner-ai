@@ -44,7 +44,7 @@ export default function CalendarHeader() {
           <ChevronRight />
         </span>
       </button>
-      <h2 className="sm:ml-3 ml-2 sm:text-base text-xs text-maroon-800 font-bold items=">
+      <h2 className="sm:ml-3 ml-2 sm:text-base text-sm text-maroon-800 font-bold items=">
         {dayjs(new Date(dayjs().year(), monthIndex)).format("MMMM YYYY")}
       </h2>
     </header>

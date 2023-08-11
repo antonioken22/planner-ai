@@ -9,10 +9,10 @@ const DashboardLayout = async ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="h-screen relative">
-      <div className="hidden h-screen lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 z-80">
+      <div className="hidden h-screen lg:flex lg:w-56 lg:flex-col lg:fixed lg:inset-y-0 z-80">
         <Sidebar isPro={isPro} apiLimitCount={apiLimitCount} />
       </div>
-      <main className="lg:pl-64 pb-10">
+      <main className="lg:pl-56 pb-10">
         <Navbar />
         {children}
       </main>

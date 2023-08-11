@@ -97,7 +97,7 @@ const ConversationPage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Why are Computer Engineers at CIT-U so hot?"
+                        placeholder="How to become a Computer Engineer?"
                         {...field}
                       />
                     </FormControl>
