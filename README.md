@@ -7,10 +7,24 @@ Your smart assistant for productivity.
 ## Fully Responsive UI
 
 ### Light mode
-![](/demo-images/dashboard-lg-light.png) ![](/demo-images/dashboard-md-light.png) ![](/demo-images/dashboard-sm-light.png)
+
+<table>
+  <tr>
+    <td><img src="/demo-images/dashboard-lg-light.png" alt="Light Mode Large"></td>
+    <td><img src="/demo-images/dashboard-md-light.png" alt="Light Mode Medium"></td>
+    <td><img src="/demo-images/dashboard-sm-light.png" alt="Light Mode Small"></td>
+  </tr>
+</table>
 
 ### Dark mode
-![](/demo-images/dashboard-lg-dark.png) ![](/demo-images/dashboard-md-dark.png) ![](/demo-images/dashboard-sm-dark.png)
+
+<table>
+  <tr>
+    <td><img src="/demo-images/dashboard-lg-dark.png" alt="Dark Mode Large"></td>
+    <td><img src="/demo-images/dashboard-md-dark.png" alt="Dark Mode Medium"></td>
+    <td><img src="/demo-images/dashboard-sm-dark.png" alt="Dark Mode Small"></td>
+  </tr>
+</table>
 
 
 ## Features
