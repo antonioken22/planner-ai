@@ -34,6 +34,8 @@ Your smart assistant for productivity.
 - Clerk Authentication (Email, Google, 9+ Social Logins)
 - Client form validation and handling using react-hook-form
 - Server error handling using react-toast
+- Set daily events on Dashboard manually
+- Set daily events on Dashboard using voice prompts (AlanAI)
 - Conversation Generation Tool (OpenAI)
 - Code Generation Tool (OpenAI)
 - Image Generation Tool (OpenAI)
@@ -42,10 +44,10 @@ Your smart assistant for productivity.
 - Page loading state
 - Stripe monthly subscription
 - Free tier with API limiting
-- How to write POST, DELETE, and GET routes in route handlers (app/api)
-- How to fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
-- How to handle relations between Server and Child components!
-- How to reuse layouts
+- Write POST, DELETE, and GET routes in route handlers (app/api)
+- Fetch data in server react components by directly accessing database (without API)
+- Handle relations between Server and Child components
+- Reuse layouts
 - Folder structure in Next 13 App Router
 
 
