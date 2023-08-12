@@ -1,5 +1,6 @@
 # PlannerAI by Team Semblantech
 Your smart assistant for productivity.
+#### Check this web app here: https://planner-ai-antonioken22.vercel.app/
 
 ![](/demo-images/landing.png)
 
