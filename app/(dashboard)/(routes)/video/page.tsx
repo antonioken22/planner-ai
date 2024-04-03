@@ -86,7 +86,7 @@ const VideoPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading}
-                      placeholder="Free credits run out, please try again later"
+                      placeholder="A walking dwarf in CIT-U"
                       {...field}
                     />
                   </FormControl>

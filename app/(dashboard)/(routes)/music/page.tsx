@@ -87,7 +87,7 @@ const MusicPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading}
-                      placeholder="Free credits run out, please try again later"
+                      placeholder="All Hail Maroon and Gold in piano"
                       {...field}
                     />
                   </FormControl>
