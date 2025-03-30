@@ -1,6 +1,7 @@
 # PlannerAI by Team Semblantech
 Your smart assistant for productivity.
-#### Check this web app here: https://planner-ai-six.vercel.app/
+#### Check this web app here: 
+> The website was not maintained anymore, so it was shut down.
 
 ![](/demo-images/landing.png)
 
